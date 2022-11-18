@@ -1,0 +1,794 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  scroll-behavior: smooth;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/background.png);
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title-satu {
+  margin-top: -5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yellowtail", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15vw;
+}
+
+.header-title-dua {
+  margin-top: -2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 8vw;
+}
+
+/*  */
+
+.content {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: block;
+}
+
+.rumah-satu {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 0.6fr 0.1fr;
+  grid-template-areas: "gambar" "teks" "button";
+  padding: 5vw;
+}
+
+.rumah-satu-image {
+  grid-area: gambar;
+}
+
+.rumah-satu-teks {
+  grid-area: teks;
+}
+
+.rumah-satu-button {
+  grid-area: button;
+}
+
+.rumah-satu-teks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rumah-satu .rumah-satu-teks p {
+  width: 100%;
+  text-align: justify;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.rumah-satu-button a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-satu {
+  width: 45vw;
+  height: 10vw;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 2vw;
+}
+
+.button-satu:hover {
+  scale: 1.2;
+  transition: 0.4s;
+  background-color: rgb(250, 192, 68);
+  color: black;
+}
+
+/*  */
+
+.rumah-dua {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 0.1fr;
+  grid-template-areas: "gambar" "teks" "button";
+  padding: 5vw;
+}
+
+.rumah-dua-image {
+  grid-area: gambar;
+}
+
+.rumah-dua-teks {
+  grid-area: teks;
+}
+
+.rumah-dua-button {
+  grid-area: button;
+}
+
+.rumah-dua-teks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rumah-dua .rumah-dua-teks p {
+  width: 100%;
+  text-align: justify;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.rumah-dua-button a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-dua {
+  width: 45vw;
+  height: 10vw;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 2vw;
+}
+
+.button-dua:hover {
+  scale: 1.2;
+  transition: 0.4s;
+  background-color: rgb(250, 192, 68);
+  color: black;
+}
+
+.keunggulan {
+  margin: 10vw auto;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  font-size: 10vw;
+}
+
+.keunggulan .title-satu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keunggulan .title-dua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-rows: repeat(12, 250px);
+  grid-template-areas: "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12";
+}
+.benefit p {
+  width: 80%;
+  font-size: 4vw;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.benefit-1 {
+  grid-area: 1;
+}
+.benefit-2 {
+  grid-area: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-3 {
+  grid-area: 3;
+}
+.benefit-4 {
+  grid-area: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-5 {
+  grid-area: 5;
+}
+.benefit-6 {
+  grid-area: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-7 {
+  grid-area: 7;
+}
+.benefit-8 {
+  grid-area: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-9 {
+  grid-area: 9;
+}
+.benefit-10 {
+  grid-area: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-11 {
+  grid-area: 11;
+}
+.benefit-12 {
+  grid-area: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+
+.type {
+  width: 100%;
+  height: auto;
+  background-image: url(images/interior.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr 0.7fr 0.1fr;
+  grid-template-areas: "judul judul" "gambar gambar" "teks teks" "denah-1 denah-2" "lantai-1 lantai-2";
+}
+.type-judul-satu {
+  color: white;
+  font-family: "Alfa Slab One", Arial, Helvetica, sans-serif;
+  font-size: 8vw;
+  grid-area: judul;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.type-gambar-satu {
+  grid-area: gambar;
+}
+.type-teks {
+  grid-area: teks;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+.type-teks p {
+  width: 80%;
+}
+.type-gambar-dua {
+  grid-area: denah-1;
+}
+.type-gambar-tiga {
+  grid-area: denah-2;
+}
+.type-lantai-bawah {
+  grid-area: lantai-1;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+.type-lantai-atas {
+  grid-area: lantai-2;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+
+/*  */
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.video-title {
+  width: auto;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+}
+.video-gambar {
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vw;
+}
+/*  */
+
+.maps {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: block;
+  padding-bottom: 5vw;
+}
+.maps a {
+  text-decoration: none;
+}
+.maps-title-dua h1 {
+  width: 80vw;
+  height: 10vw;
+  background-color: rgb(64, 64, 64);
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 2vw;
+}
+.maps div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.maps .maps-title-dua {
+  margin-top: -3vw;
+}
+
+.maps .maps-title-satu,
+.maps-title-dua {
+  height: 2em;
+  font-size: 7vw;
+  color: black;
+}
+.maps-title-satu h1 {
+  border-bottom: 3px solid rgb(111, 110, 110);
+}
+.maps-gambar .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 80vw;
+  height: 120vw;
+}
+
+/*  */
+
+/*  */
+/*  */
+/*  */
+/* --------------------RESPONSIVE-------------------- */
+
+@media (min-width: 768px) {
+  .content {
+    width: 100%;
+  }
+
+  /* -----RUMAH SATU----- */
+  .rumah-satu {
+    width: 90%;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "gambar teks" "gambar button";
+  }
+
+  .rumah-satu-image {
+    grid-area: gambar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+  }
+  .rumah-satu-teks {
+    grid-area: teks;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .rumah-satu-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rumah-satu .rumah-satu-teks p {
+    width: 70%;
+    font-size: 1.3vw;
+    text-align: justify;
+  }
+  .button-satu {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+  }
+
+  /* -----RUMAH DUA----- */
+  .rumah-dua {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "teks gambar" "button gambar";
+  }
+
+  .rumah-dua-image {
+    grid-area: gambar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+  }
+  .rumah-dua-teks {
+    grid-area: teks;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .rumah-dua-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rumah-dua .rumah-dua-teks p {
+    width: 70%;
+    font-size: 1.3vw;
+    text-align: justify;
+  }
+  .button-dua {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+  }
+  /*  */
+
+  .benefit {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "gambar1 teks1" "teks2 gambar2" "gambar3 teks3" "teks4 gambar4" "gambar5 teks5" "teks6 gambar6";
+  }
+
+  .benefit p {
+    font-size: 2vw;
+  }
+
+  .benefit-1 {
+    grid-area: gambar1;
+  }
+  .benefit-2 {
+    grid-area: teks1;
+  }
+  .benefit-3 {
+    grid-area: gambar2;
+  }
+  .benefit-4 {
+    grid-area: teks2;
+  }
+  .benefit-5 {
+    grid-area: gambar3;
+  }
+  .benefit-6 {
+    grid-area: teks3;
+  }
+  .benefit-7 {
+    grid-area: gambar4;
+  }
+  .benefit-8 {
+    grid-area: teks4;
+  }
+  .benefit-9 {
+    grid-area: gambar5;
+  }
+  .benefit-10 {
+    grid-area: teks5;
+  }
+  .benefit-11 {
+    grid-area: gambar6;
+  }
+  .benefit-12 {
+    grid-area: teks6;
+  }
+
+  .type {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2.4vw;
+    height: auto;
+    background-image: url(images/interior.jpg);
+    background-attachment: fixed;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 0.7fr 0.1fr;
+    grid-template-areas: "judul judul gambar-1 gambar-1" "teks teks denah-1 denah-2" ". . lantai-1 lantai-2";
+  }
+  .type-judul-satu {
+    grid-area: judul;
+    font-size: 8vw;
+  }
+  .type-teks {
+    grid-area: teks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+  }
+  .type-gambar-satu {
+    grid-area: gambar-1;
+  }
+  .type-gambar-dua {
+    grid-area: denah-1;
+  }
+  .type-gambar-tiga {
+    grid-area: denah-2;
+  }
+  .type-lantai-bawah {
+    grid-area: lantai-1;
+    font-size: 3vw;
+  }
+  .type-lantai-atas {
+    grid-area: lantai-2;
+    font-size: 3vw;
+  }
+  /*  */
+  .maps {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "title-1  gambar" "title-2  gambar";
+  }
+  .maps .maps-title-satu {
+    grid-area: title-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps .maps-title-dua {
+    grid-area: title-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .maps-title-dua h1 {
+    width: 35vw;
+    height: 7vw;
+    background-color: rgb(64, 64, 64);
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 1.5vw;
+  }
+
+  .maps-title-dua h1:hover {
+    scale: 1.1;
+    transition: 0.4s;
+    background-color: rgb(250, 192, 68);
+    color: black !important;
+  }
+
+  .maps-gambar {
+    grid-area: gambar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps-gambar img {
+    width: 50vw;
+    margin-right: 3vw;
+  }
+  .maps h1 {
+    color: black;
+    font-size: 3vw;
+  }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 35vw !important;
+    width: 50vw !important;
+  }
+}

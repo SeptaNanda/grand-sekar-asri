@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* -----WEB----- */
+footer {
+  width: 100%;
+  height: auto;
+  background-image: url(images/interior2.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0vw 45vw;
+}
+@media (min-width: 580px) {
+  footer {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: "satu" "dua";
+  }
+  footer h1 {
+    color: white;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+  }
+  .footer h2 {
+    font-family: "Amiri", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1vw;
+    line-height: 1;
+    font-size: 1.5vw;
+    transition: all 0.35s;
+  }
+  .footer h2:hover {
+    color: rgb(250, 192, 68);
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer {
+    grid-area: satu;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "whatsapp alamat instagram";
+  }
+
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .whatsapp {
+    grid-area: whatsapp;
+  }
+  .alamat {
+    grid-area: alamat;
+  }
+  .instagram {
+    grid-area: instagram;
+  }
+
+  /* LOGO */
+  .footer-logo {
+    grid-area: dua;
+    display: flex;
+    width: 30%;
+    margin: 3vw auto;
+  }
+  .footer-logo div {
+    flex: 1;
+    display: flex;
+    font-size: 3vw;
+  }
+  .footer-logo i {
+    transition: all 0.3s;
+  }
+  .footer-logo i:hover {
+    color: rgb(250, 192, 68);
+    scale: 1.4;
+  }
+  .logo-satu {
+    justify-content: end;
+  }
+  .logo-dua {
+    justify-content: center;
+  }
+  .logo-tiga {
+    justify-content: start;
+  }
+
+  /* COPYRIGHT */
+  .copyright {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+  }
+  .copyright h1 {
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+  }
+}
+
+/* -----MOBILE----- */
+
+@media (max-width: 580px) {
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 1fr auto;
+    grid-template-areas: "footer" "logo" "copyright";
+    padding: 15vw 0 15vw 0;
+  }
+  .footer-logo {
+    grid-area: logo;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "satu" "dua" "tiga";
+  }
+  .footer div {
+    margin-bottom: 2vw;
+  }
+  .footer div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer h1 {
+    color: white;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 7vw;
+  }
+  footer h2 {
+    color: rgb(250, 192, 68);
+  }
+  .footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-family: "Amiri", Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3vw;
+  }
+
+  .whatsapp {
+    grid-area: satu;
+  }
+  .alamat {
+    grid-area: dua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .alamat a {
+    width: 80%;
+  }
+  .instagram {
+    grid-area: tiga;
+  }
+  /* LOGO */
+  .footer-logo {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo div {
+    flex: 1;
+  }
+  .footer-logo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: white;
+  }
+  .footer-logo a {
+    text-decoration: none;
+  }
+  /* COPYRIGHT */
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+  }
+}

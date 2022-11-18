@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(images/background.png);
+  background-attachment: fixed;
+}
+
+body img {
+  width: 100%;
+}
+.header {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  width: auto;
+  height: auto;
+  border-bottom: 5px solid rgb(250, 192, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  color: white;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+/* -----CONTENT----- */
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+  }
+  .title {
+    position: relative;
+    width: 50%;
+    padding: 0;
+    margin: 10vw auto -5vw auto;
+    z-index: 1;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "satu video" "dua video" "tiga video";
+    margin-top: 15vw;
+    justify-items: center;
+    margin-bottom: 5vw;
+  }
+  .content-video {
+    grid-area: video;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-video img {
+    height: 90%;
+    border-radius: 1vw;
+  }
+  .content-title-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: satu;
+    font-family: "Amiri", Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .content-title-2 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: dua;
+    font-family: "Amiri", Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1;
+  }
+  .content-teks {
+    grid-area: tiga;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .content-teks p {
+    width: 60%;
+    text-align: justify;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+  }
+}
+/* -----RESPONSIVE----- */
+
+@media (max-width: 768px) {
+  .title {
+    width: 50%;
+    margin: 10vw auto -16vw auto;
+  }
+  main {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 10vw;
+  }
+  .content {
+    display: grid;
+    grid-template-rows: 1fr 2fr auto 4fr;
+    grid-template-areas: "satu" "dua" "video" "teks";
+    margin-top: 0;
+  }
+  .content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-title-1 {
+    grid-area: satu;
+    margin-top: 10vw;
+    display: none !important;
+    font-family: "Amiri", Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+  }
+  .content-title-2 {
+    grid-area: dua;
+    margin-bottom: 10vw;
+    margin-top: 5vw;
+  }
+  .content-video {
+    grid-area: video;
+  }
+  .content-teks {
+    grid-area: teks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-teks p {
+    width: 90%;
+    text-align: justify !important;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-title-2 {
+    margin-top: -2vw;
+  }
+}

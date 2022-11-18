@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(images/background.png);
+  background-attachment: fixed;
+}
+
+/* ----CONTACT----- */
+.header {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  width: auto;
+  height: auto;
+  border-bottom: 5px solid rgb(250, 192, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  color: white;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+/* -----CONTENT----- */
+.content {
+  width: 100%;
+  height: auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  background-color: rgb(219, 219, 219);
+  margin: 10vw auto 0 auto;
+}
+.content-main {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title gambar" "teks gambar" "teks gambar";
+}
+.content-title {
+  grid-area: title;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  padding-left: 5vw;
+  color: black;
+  font-family: "Amiri", Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+}
+
+.content-teks {
+  grid-area: teks;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding-left: 5vw;
+}
+.content-teks p {
+  width: 80%;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: justify;
+}
+.content-gambar {
+  grid-area: gambar;
+  padding: 4vw;
+}
+
+.line {
+  width: 5vw;
+  height: 7vw;
+  border-left: 2px solid rgb(250, 192, 68);
+  margin: 2vw auto;
+}
+/* -----CONTACT----- */
+.contact {
+  width: 100%;
+  height: 40vw;
+  background-color: white;
+  display: flex;
+}
+.contact div {
+  flex: 1;
+}
+.contact-gambar {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  margin: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 8px;
+}
+.contact-gambar img {
+  filter: brightness(40%);
+}
+.contact-teks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 4vw;
+}
+/* -----CONTACT TABLE----- */
+.contact-table {
+  width: 100%;
+  height: 85%;
+  margin: 3vw auto;
+}
+.contact-list {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+  margin: 0 auto;
+}
+.contact-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "whatsapp" "email" "instagram";
+}
+.contact-list a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  font-weight: bolder;
+}
+.contact-list a:hover {
+  color: rgb(253, 173, 0);
+}
+.contact-list div {
+  margin: 1vw auto;
+  color: black;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.5vw;
+}
+.contact-list h1 {
+  font-family: "Amiri", Arial, Helvetica, sans-serif !important;
+  font-size: 2.5vw !important;
+}
+.whatsapp {
+  grid-area: whatsapp;
+}
+.email {
+  grid-area: email;
+}
+.instagram {
+  grid-area: instagram;
+}
+/* -----MAPS----- */
+
+.maps {
+  width: 100%;
+  height: auto;
+}
+
+.line-2 {
+  width: 5vw;
+  height: 7vw;
+  border-left: 2px solid rgb(250, 192, 68);
+  margin: 2vw auto -2vw auto;
+}
+
+@media (max-width: 768px) {
+  .content-main {
+    display: block;
+  }
+
+  .content-gambar img {
+    filter: brightness(30%);
+    position: relative;
+  }
+  .content-teks {
+    position: absolute;
+    width: 90%;
+    height: 60vw;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-teks p {
+    color: white;
+    font-size: 3vw;
+    width: 60%;
+  }
+  .content-title {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 3vw;
+  }
+  /* CONTACT */
+  .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw 0 10vw 0;
+  }
+  .contact-list {
+    width: 60%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: -15vw;
+    position: relative;
+    border: 3px solid rgb(250, 192, 68);
+  }
+  .contact-list h1 {
+    font-size: 4vw !important;
+  }
+  .contact-list a {
+    font-size: 3vw;
+  }
+  .line,
+  .line-2 {
+    height: 15vw;
+  }
+}
