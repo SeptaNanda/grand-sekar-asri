@@ -224,19 +224,23 @@ body {
 }
 
 .button-satu {
-  width: 45vw;
-  height: 10vw;
+  width: fit-content !important;
+  height: auto !important;
+  padding: 1.5vw;
   background-color: rgb(64, 64, 64);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-  border-radius: 2vw;
+  border-radius: 2vw !important;
+}
+.button-satu i {
+  margin: 0 0 0 1vw !important;
 }
 
 .button-satu:hover {
-  scale: 1.2;
+  scale: 1.03;
   transition: 0.4s;
   background-color: rgb(250, 192, 68);
   color: black;
@@ -286,19 +290,23 @@ body {
 }
 
 .button-dua {
-  width: 45vw;
-  height: 10vw;
+  width: fit-content !important;
+  height: auto !important;
+  padding: 1.5vw;
   background-color: rgb(64, 64, 64);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-  border-radius: 2vw;
+  border-radius: 2vw !important;
+}
+.button-dua i {
+  margin: 0 0 0 1vw !important;
 }
 
 .button-dua:hover {
-  scale: 1.2;
+  scale: 1.03;
   transition: 0.4s;
   background-color: rgb(250, 192, 68);
   color: black;
@@ -745,21 +753,26 @@ body {
     align-items: center;
     text-align: center;
   }
+  .maps .maps-title-dua i {
+    margin: 0 0 0 1vw !important;
+  }
 
   .maps-title-dua h1 {
-    width: 35vw;
-    height: 7vw;
+    width: fit-content;
+    height: auto;
+    padding: 1.5vw;
     background-color: rgb(64, 64, 64);
     color: white !important;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    border-radius: 1.5vw;
+    border-radius: 2vw;
+    font-size: 2vw !important;
   }
 
   .maps-title-dua h1:hover {
-    scale: 1.1;
+    scale: 1.03;
     transition: 0.4s;
     background-color: rgb(250, 192, 68);
     color: black !important;
